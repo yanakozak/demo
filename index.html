@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>description</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Сайт об HTML и создании сайтов">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <h1>Header</h1>
+            <video  controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+        </header>
+        <main>
+            <article>
+
+                <nav>
+                    <ul class="topmenu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="" >Blog</a>
+                            <ul class="submenu">
+                                <li><a href="">Category</a></li>
+                                <li><a href="">Author</a></li>
+                                <li><a href="">Archive</a></li>
+                                <li><a href="">Tags</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" >Portfolio</a>
+                            <ul class="submenu">
+                                <li><a href="">Category</a></li>
+                                <li><a href="">Author</a></li>
+                                <li><a href="">Archive</a></li>
+                                <li><a href="">Tags</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <p>Select tag:</p>
+                <div class="select">
+                    <select name="slct" id="slct">
+                        <option selected disabled>Choose an option</option>
+                        <option value="1">Pure CSS</option>
+                        <option value="2">No JS</option>
+                        <option value="3">Nice!</option>
+                    </select>
+                </div>
+                <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+                <h1 onclick="changeText(this)">Click on this text!</h1>
+                <p>Bring your mouse inside the division to see the result:</p>
+                <div onmouseover = "over()" onmouseout = "out()">
+                    <h2>MOUSE OVER THIS </h2>
+                </div>
+                <a href="html_images.asp">HTML Images</a>
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и  Lorem Ipsum является стандартной <a href="#">"рыбой"</a> для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+            </article>
+            <p><a href="#">Текстовий лінк</a></p>
+            <p><a href="#"><img src="pic1.webp" alt=""></a></p>
+            <p><a href="#"><img src="pic2.jpg" alt="">Текстовий лінк з картинкою</a></p>
+            <table border="1">
+                <caption>Таблиця розмірів</caption>
+                <tr>
+                    <th>Україна</th>
+                    <th>Великобританія</th>
+                    <th>Європа</th>
+                    <th>Довжина см</th>
+                </tr>
+                <tr><td  colspan="2" >34,5</td><<td>36</td><td>23</td></tr>
+				<tr><td>35,5</td><td>4</td><td>36⅔</td><td>23–23,5</td></tr>
+                <tr><td>36</td><td>4,5</td><td>37⅓</td><td>23,5</td></tr>
+                <tr><td>36,5</td><td>5</td><td>38</td><td>24</td></tr>
+                <tr><td>37</td><td>5,5</td><td>38⅔</td><td>24,5</td></tr>
+                <tr><td>38</td><td>6</td><td>39⅓</td><td>25</td></tr>
+                <tr><td>38,5</td><td>6,5</td><td>40</td><td>25,5</td></tr>
+                <tr><td>39</td><td>7</td><td>40⅔</td><td>25,5–26</td></tr>
+                <tr><td>40</td><td>7,5</td><td>41⅓</td><td>26</td></tr>
+                <tr><td>40,5</td><td>8</td><td>42</td><td>26,5</td></tr>
+                <tr><td>41</td><td>8,5</td><td>42⅔</td><td>27</td></tr>
+                <tr><td>42</td><td>9</td><td>43⅓</td><td>27,5</td></tr>
+                <tr><td>43</td><td>9,5</td><td>44</td><td>28</td></tr>
+                <tr><td>43,5</td><td>10</td><td>44⅔</td><td>28–28,5</td></tr>
+                <tr><td>44</td><td>10,5</td><td>45⅓</td><td>28,5–29</td></tr>
+                <tr><td>44,5</td><td>11</td><td>46</td><td>29</td></tr>
+                <tr><td>45</td><td>11,5</td><td>46⅔</td><td>29,5</td></tr>
+                <tr><td>46</td><td>12</td><td>47⅓</td><td>30</td></tr>
+                <tr><td>46,5</td><td>12,5</td><td>48</td><td>30,5</td></tr>
+                <tr><td>47</td><td>13</td><td>48⅔</td><td>31</td></tr>
+                <tr><td>48</td><td>13,5</td><td>49⅓</td><td>31,5</td></tr>
+            </table>
+            <form>
+                Name:&nbsp;&nbsp;
+                <Input type="text" Name="Name" Size=15 Maxlength=15>
+                <br>
+                Gender:&nbsp;&nbsp;
+                <Input type="radio" Name="Gender">&nbsp;M&nbsp;&nbsp;<Input type="radio" Name="Gender">&nbsp;F
+                <br>
+                Password:&nbsp;
+                <Input type="Password" Name="Password">
+                <br>
+                Address:<br>
+                <Textarea Name="Address" Rows="5" Cols="15"></Textarea>
+                <br>
+                Fields of Interest:<br>
+                <Input type="checkbox" Name="Browsing">&nbsp;Browsing&nbsp;&nbsp;<Input type="checkbox" Name="Reading">&nbsp;Reading<br><Input type="checkbox" name="Gaming">&nbsp;Gaming&nbsp;&nbsp;<Input type="checkbox" Name="Trekking">&nbsp;Trekking<br>
+               <Input type="Submit" Name="Submit" value="Submit">&nbsp;&nbsp;<Input type="Reset" Name="Reset" value="Reset"></form>
+
+        </main>
+
+        <footer class="footer">
+            footer
+        </footer>
+    </body>
+    </html>
+    <script type="text/javascript" src="script.js"></script>
